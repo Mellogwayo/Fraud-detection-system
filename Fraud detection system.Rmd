@@ -1,0 +1,36 @@
+---
+title: "FRAUD DETECTION SYSTEM"
+author: "MELISSA OGWAYO"
+date: "2023-11-18"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+# **INTRODUCTION**
+
+### **Project Objectives, Scope, and Success Criteria:**
+
+A data scientist\'s main purpose is to facilitate data-driven decisions . According to Provost et all (2013), in the 1990s, automated decision-making changed the banking and consumer credit industries dramatically. In the 1990s, banks and telecommunications companies also implemented massive-scale systems for managing data-driven fraud control decisions.
+
+Fraud detection systems are built with the aim of ensuring high accuracy in identifying fraudulent transactions while minimising false positives to avoid inconveniencing legitimate users. Companies desire to build a system that can adapt to evolving fraud patterns and techniques by incorporating machine learning algorithms that continuously learn from new data. Allowing for customization based on the specific needs and characteristics of the business, as different industries and organisations may face unique fraud challenges.
+
+The data set in use can be found here: <https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud>
+
+It is crucial for credit card companies to be able to identify instances of fraudulent credit card transactions to prevent customers from being charged for unauthorized purchases.
+
+The dataset pertains to credit card transactions made by European cardholders in September 2013. Over a two-day period, there were 492 fraudulent transactions out of a total of 284,807 transactions. Notably, the dataset is highly unbalanced, with fraudulent transactions representing only 0.172% of the total.
+
+The dataset comprises solely numerical input variables resulting from a PCA transformation. Due to confidentiality constraints, the original features and additional background information about the data cannot be disclosed. Principal components V1 through V28 are derived from PCA, while the 'Time' and 'Amount' features have not undergone PCA transformation. The 'Time' feature indicates the seconds elapsed between each transaction and the first one in the dataset, while 'Amount' represents the transaction amount. The 'Class' feature serves as the response variable, taking a value of 1 for fraud and 0 otherwise.
+
+Given the imbalance in class distribution, it is advisable by the data owners to assess accuracy using the Area Under the Precision-Recall Curve (AUPRC), as traditional confusion matrix accuracy may lack meaning in unbalanced classification scenarios.
+
+When dealing with imbalanced class distribution and utilizing the Area Under the Precision-Recall Curve (AUPRC) as the evaluation metric, it's important to align the projects aims, key performance indicators (KPIs), and targets with the specific challenges posed by this scenario.The primary aim is to enhance the model's ability to detect fraudulent transactions accurately.The project also aims to reduce the instances where legitimate transactions are wrongly classified as fraudulent (false positives). This is crucial in maintaining customer satisfaction and trust.
+
+The AUPRC (Area Under the Precision-Recall Curve) is the main KPI. It provides a comprehensive evaluation of your model's performance in capturing true positives while considering the precision-recall trade-off. We will then proceed to break down the AUPRC into precision and recall. Precision measures the accuracy of the positive predictions, while recall assesses the model's ability to capture all positive instances. Balancing these metrics is essential in an imbalanced setting.We will monitor the rate of false positives, as it directly impacts the number of legitimate transactions flagged as fraudulent.
+
+Setting specific targets for credit card fraud detection involves finding a balance between minimising false positives (legitimate transactions mistakenly flagged as fraud) and maximising the capture of true positives (actual fraudulent transactions). Here are some suggested targets and tips:
+
+This project aims for an AUPRC of 0.8 or higher, a precision of at least 0.8 while maintaining a recall of 0.7 and the maximum acceptable false positive rate is 0.1%.
