@@ -1,5 +1,5 @@
 from flask import Flask, request, jsonify
-import os  # Import the os module to access environment variables
+import joblib
 
 # Initialize Flask application
 app = Flask(__name__)
@@ -24,8 +24,5 @@ def predict():
 
 # Run the Flask application
 if __name__ == '__main__':
-    # Use the PORT environment variable provided by Heroku
-    port = int(os.environ.get('PORT', 5000))
-    app.run(debug=True, port=port)
-
+    app.run(debug=True, port=5000)
 
