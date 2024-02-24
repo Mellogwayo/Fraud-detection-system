@@ -32,7 +32,7 @@ To use the fraud detection system:
 
 1. Clone the repository to your local machine.
 2. Ensure you have Python installed along with the required libraries listed in the notebook.
-3. Open and run the `fraud_detection_system.ipynb` notebook using Jupyter or any compatible environment.
+3. Open and run the `Fraud Detection System-Analysis report.ipynb` notebook using Jupyter or any compatible environment.
 4. Follow the instructions in the notebook to load the dataset, preprocess the data, train and evaluate machine learning models, and deploy the system.
 
 ## Dependencies
