@@ -10,6 +10,22 @@ This repository contains code for a fraud detection system developed using Pytho
 
 2. **fraud_detection_system.ipynb**: This Jupyter Notebook file contains the Python code for the fraud detection system. It includes data loading, preprocessing, exploratory data analysis, model building, evaluation, optimization, and deployment steps.
 
+3. **Fraud Detection System-Proposal.ipynb**: This Jupyter Notebook file contains the proposal for the fraud detection system.
+
+4. **Fraud Detection System-Analysis report.ipynb**: This Jupyter Notebook file contains the analysis report for the fraud detection system.
+
+5. **app.py**: This Python file contains the code for the web application of the fraud detection system.
+
+6. **requirements.txt**: This file lists the dependencies required to run the code.
+
+7. **boxplots_combined.png**: This image file contains the combined boxplots generated during the analysis.
+
+8. **runtime.txt**: This file specifies the Python runtime version.
+
+9. **Procfile**: This file specifies the commands that are executed by the app on startup.
+
+10. **random_forest_model.pkl**: This file contains the trained Random Forest model.
+
 ## Usage
 
 To use the fraud detection system:
@@ -31,11 +47,9 @@ The following Python libraries are required to run the code:
 - joblib
 
 You can install the dependencies using pip:
-
-```
-pip install pandas numpy seaborn matplotlib scikit-learn joblib
-```
+pip install -r requirements.txt
 
 ## Acknowledgments
 
 The dataset used in this project is sourced from Kaggle: [Credit Card Fraud Detection](https://www.kaggle.com/mlg-ulb/creditcardfraud).
+
